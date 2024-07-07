@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 
 app.use(express.json());
-app.post("/example" , (request, response, next)=>{
+app.post("/example", (request, response, next)=>{
     let data = request.body;
     console.log(data);
     response.send("This is example response");
