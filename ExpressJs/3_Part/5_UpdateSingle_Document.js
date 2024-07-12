@@ -56,3 +56,6 @@ app.put("/student/single" ,async (req,res,next)=>{
         res.status(500).json({message:error.message});
     }
 });
+app.listen(8008 ,()=>{
+    console.log("Server is running on port 8008");
+});
